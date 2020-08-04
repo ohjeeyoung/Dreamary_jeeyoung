@@ -5,7 +5,7 @@ class Designer(models.Model):
     image = models.ImageField(upload_to = 'images/')
     name = models.CharField(max_length= 50)
     address = models.CharField(max_length= 255)
-    desciption = models.TextField()
+    description = models.TextField()
 
     def __str__(self):
         return self.name
